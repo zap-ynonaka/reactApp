@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+const click = () => {
+  console.log(1);
+}
 
 class PlusBtn extends Component {
   render() {
     return (
-      <button>+1</button>
+      <div className="test">
+        <button onClick={click}>+1</button>
+      </div>
     )
   }
 }
